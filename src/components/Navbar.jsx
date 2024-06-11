@@ -4,11 +4,13 @@ import { useEffect } from 'react';
 import logo from '../images/LOGO-ROKJ.png';
 import copyrightLogo from '../images/yellow-loewenmut-logo (2).png';
 
-
 export default function Navbar() {
 
-    window.addEventListener("scroll", () => {
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 
+    window.addEventListener("scroll", () => {
         if (window.scrollY > 0) {
             document.getElementById("navid").classList.add("sticky");
         }
@@ -48,6 +50,7 @@ export default function Navbar() {
             nav.style.right = "-100%";
         }
     }
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg my-navbar sticky1" id="navid">
