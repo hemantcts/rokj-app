@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-   
+
 export default function Home() {
 
   return (
@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <div>
         <header>
-          <Navbar/>
+          <Navbar />
         </header>
         <section>
           <div className="banner" style={{ backgroundImage: `url(${banner})` }}>
@@ -261,7 +261,7 @@ export default function Home() {
         </section>
 
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </div>
 
