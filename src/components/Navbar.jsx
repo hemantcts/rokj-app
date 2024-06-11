@@ -55,7 +55,7 @@ export default function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg my-navbar sticky1" id="navid">
                 <div className="container">
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/git2">
                         <img src={logo} alt="" />
                     </Link>
                     <button className="mybtn1 btn-hover btn-hover2">SPENDEN</button>
@@ -70,16 +70,16 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/">Über uns</Link>
+                                <Link className="nav-link" aria-current="page" to="/git2">Über uns</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Idee und Zweck</Link>
+                                <Link className="nav-link" to="/git2">Idee und Zweck</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Erfahrungsberichte</Link>
+                                <Link className="nav-link" to="/git2">Erfahrungsberichte</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Antrag stellen</Link>
+                                <Link className="nav-link" to="/git2">Antrag stellen</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Kontakt</Link>
