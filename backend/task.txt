@@ -1,0 +1,12 @@
+I see this website design doesnt have a contact form. Just add one.
+
+1. Name (mandatory) // Done
+2. email (mandatory) // Done
+3. Date (datepicker) (mandatory) // Done
+4. Candidates(repeater field) (1 entry mandatory)
+5. Comments(text field, non mandatory) // Done
+6. Honeypot field(hidden field)
+
+Add google recaptcha or math captcha
+
+SUBMIT BUTTON

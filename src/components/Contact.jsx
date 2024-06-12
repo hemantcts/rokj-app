@@ -5,6 +5,7 @@ import banner2 from "../images/kontakt_banner.png";
 import emailIcon from "../images/email_icon.svg";
 import locationIcon from "../images/location_icon.svg";
 import awardImage from "../images/gettyimages-172601204-170667a_copy-1.png";
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -23,7 +24,7 @@ export default function Contact() {
 								<div className="banner_breadcrumbs">
 									<nav aria-label="breadcrumb">
 										<ol className="breadcrumb">
-											<li className="breadcrumb-item"><a href="https://www.rokj-ilef.ch/">
+											<li className="breadcrumb-item"><a href="#">
 												<div className="breadcrumbs_home">Home</div>
 											</a></li>
 											<li className="breadcrumb-item" aria-current="page">Kontakt</li>
@@ -54,7 +55,7 @@ export default function Contact() {
 								<div className="list_item blue_color">
 									<img src={emailIcon} className="email_icon" alt='' />
 									<h3>E-Mail</h3>
-									<a href="mailto:info@rokj-ilef.ch">info@rokj-ilef.ch</a>
+									<Link to="/form">info@rokj-ilef.ch</Link>
 								</div>
 							</div>
 						</div>
@@ -75,7 +76,7 @@ export default function Contact() {
 								<div className="award_content">
 									<h2>Wir brauchen Ihre Unterstützung!</h2>
 									
-										<a style={{display:"inline-block", marginTop:"10px"}} href="https://www.rokj-ilef.ch/spenden/" className="text-center mybtn1 my-btn">JETZT SPENDEN</a>
+										<a style={{display:"inline-block", marginTop:"10px"}} href="#" className="text-center mybtn1 my-btn">JETZT SPENDEN</a>
 									
 								</div>
 							</div>

@@ -1,4 +1,3 @@
-import React, { useCallback, useEffect } from 'react';
 import banner from '../images/banner-img.png';
 import image1 from '../images/javier-trueba-iqpr1xkf5f0-unsplash-2560-hq.png';
 import image2 from "../images/barometer-graph-1.svg";

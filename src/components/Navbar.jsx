@@ -15,7 +15,7 @@ export default function Navbar() {
             document.getElementById("navid").classList.add("sticky");
         }
         else {
-            document.getElementById("navid").classList.remove("sticky")
+            document.getElementById("navid").classList.remove("sticky");
         }
     })
 

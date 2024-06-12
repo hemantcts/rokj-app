@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Contact from './components/Contact';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/git2' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/form' element={<Form />}/>
       </Routes>
     </div>
   );
