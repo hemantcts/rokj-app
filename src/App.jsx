@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='/git2' element={<Home />} />
+        <Route path='/rokj-app' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/form' element={<Form />}/>
       </Routes>

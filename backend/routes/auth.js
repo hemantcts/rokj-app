@@ -20,8 +20,7 @@ router.post("/fetchUser", [body("name", "Name field can't be Empty").isLength({ 
     let a = req.body.a;
     let b = req.body.b;
     let ans1 = req.body.ans;
-    let ans = parseInt(ans1);
-    
+    let ans = parseInt(ans1);    
 
     if(a+b!==ans){
         success = false;
@@ -29,12 +28,12 @@ router.post("/fetchUser", [body("name", "Name field can't be Empty").isLength({ 
     }
 
     try{
-
         user = await usersInfo.create({
             name: req.body.name,
             email: req.body.email,
             comment: req.body.comment,
             date: req.body.date,
+            dob: req.body.dob,
         })
 
         let result = req.body;

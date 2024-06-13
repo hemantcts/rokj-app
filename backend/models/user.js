@@ -18,6 +18,9 @@ const userInfoSchema = new Schema({
     },
     date : {
         type : String
+    },
+    dob : {
+        type : String
     }
 })
 
