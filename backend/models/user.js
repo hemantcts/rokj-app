@@ -21,6 +21,9 @@ const userInfoSchema = new Schema({
     },
     dob : {
         type : String
+    },
+    candidates : {
+        type : Array
     }
 })
 

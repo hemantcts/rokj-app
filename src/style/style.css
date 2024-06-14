@@ -1397,7 +1397,7 @@ ol li {
 }
 
 #alertId{
-    position: absolute;
+    position: fixed;
     z-index: 20;
     width: 100%;
     padding: 20px 125px;
@@ -1427,4 +1427,74 @@ ol li {
     width: 0;
     z-index: -1;
     width: 100%;
+}
+
+
+
+.repeater-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .repeater-field {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .repeater-field input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .repeater-field button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    margin-top: 10px;
+  }
+  
+  .repeater-container {
+    border: 1px solid #ccc; /* Add border to the repeater container */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .repeater-field {
+    margin-bottom: 10px;
+  }
+  
+  .repeater-field hr {
+    margin-top: 10px; /* Add margin-top to the horizontal line */
+  }
+  
+
+  .repeater-container {
+    border: 1px solid #ccc; /* Add border to the repeater container */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .repeater-field {
+    margin-bottom: 10px;
+  }
+  
+  .repeater-field hr {
+    margin-top: 10px; /* Add margin-top to the horizontal line */
+  }
+  
+  @media (max-width: 768px) {
+    .repeater-field input,
+    .repeater-field button {
+      margin-top: 10px; /* Add margin to inputs and button on mobile screens */
+    }
+  }
+  
+  textarea{
+    resize: none;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Hide the increase/decrease buttons in WebKit browsers */
+  appearance: none; /* Hide the increase/decrease buttons in other browsers */
 }

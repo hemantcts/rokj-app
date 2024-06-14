@@ -20,12 +20,28 @@ router.post("/fetchUser", [body("name", "Name field can't be Empty").isLength({ 
     let a = req.body.a;
     let b = req.body.b;
     let ans1 = req.body.ans;
-    let ans = parseInt(ans1);    
+    let ans = parseInt(ans1);
+
+    for(let i=0; i<req.body.candidates.length; i++){
+        let name = req.body.candidates[i].name;
+        let dob = req.body.candidates[i].dob;
+        console.log(name, dob)
+    
+        if((name.length<1) || (dob.length<1)){
+            success = false;
+            return res.status(400).json({ success, errors:[{msg:"candidates field can not be empty"}]});
+        }
+    }
 
     if(a+b!==ans){
         success = false;
-        return res.status(400).json({ success, errors:[{msg:"Captcha is invalid"}],  });
+        return res.status(400).json({ success, errors:[{msg:"Captcha is invalid"}]});
     }
+
+    // if(name.length < 1 || dob.length < 1){
+    //     success = false;
+    //     return res.status(400).json({ success, errors:[{msg:"candidates field can not be empty"}]});
+    // }
 
     try{
         user = await usersInfo.create({
@@ -33,7 +49,7 @@ router.post("/fetchUser", [body("name", "Name field can't be Empty").isLength({ 
             email: req.body.email,
             comment: req.body.comment,
             date: req.body.date,
-            dob: req.body.dob,
+            candidates: req.body.candidates
         })
 
         let result = req.body;
