@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/rokj-app/static/css/main.e27e9b95.css",
+    "main.js": "/rokj-app/static/js/main.af889503.js",
+    "static/js/453.54c620fc.chunk.js": "/rokj-app/static/js/453.54c620fc.chunk.js",
+    "static/media/banner-img.png": "/rokj-app/static/media/banner-img.4de2ce8df3f7abd298a4.png",
+    "static/media/kontakt_banner.png": "/rokj-app/static/media/kontakt_banner.668989992d94649b65e1.png",
+    "static/media/ashton-bingham-sahbl2upxco-unsplash.png": "/rokj-app/static/media/ashton-bingham-sahbl2upxco-unsplash.1f8d013a5b8ab021b49b.png",
+    "static/media/javier-trueba-iqpr1xkf5f0-unsplash-2560-hq.png": "/rokj-app/static/media/javier-trueba-iqpr1xkf5f0-unsplash-2560-hq.e33865dc4a86417bb1c9.png",
+    "static/media/4uQJ0h1QvGk-HD.png": "/rokj-app/static/media/4uQJ0h1QvGk-HD.00c4331648ee834bc75b.png",
+    "static/media/gettyimages-172601204-170667a_copy-1.png": "/rokj-app/static/media/gettyimages-172601204-170667a_copy-1.05b03a5ce36f6985c5d2.png",
+    "static/media/rokj-erfahrungsbericht-1-610-hq.png": "/rokj-app/static/media/rokj-erfahrungsbericht-1-610-hq.82dee0ce043f984bdd2e.png",
+    "static/media/rokj-erfahrungsbericht-2.png": "/rokj-app/static/media/rokj-erfahrungsbericht-2.62cdb829308f8cff4b28.png",
+    "static/media/rokj-erfahrungsbericht-4-610-hq.png": "/rokj-app/static/media/rokj-erfahrungsbericht-4-610-hq.6653dca1c34e95b3b166.png",
+    "static/media/barometer-graph-1.svg": "/rokj-app/static/media/barometer-graph-1.04c030c5f2d885b63e2b6792cc78f2df.svg",
+    "static/media/new-rokj-golftour-logo.svg": "/rokj-app/static/media/new-rokj-golftour-logo.d49d7867831f474a9ec46bbfd19e8e68.svg",
+    "static/media/email_icon.svg": "/rokj-app/static/media/email_icon.40e354ac0c56597242200b6b0938aed6.svg",
+    "static/media/new-logo.svg": "/rokj-app/static/media/new-logo.315d7104151b4074809c1028805229dc.svg",
+    "index.html": "/rokj-app/index.html",
+    "static/media/location_icon.svg": "/rokj-app/static/media/location_icon.5dec088e3f31d683f0ba75143b3ad175.svg",
+    "main.e27e9b95.css.map": "/rokj-app/static/css/main.e27e9b95.css.map",
+    "main.af889503.js.map": "/rokj-app/static/js/main.af889503.js.map",
+    "453.54c620fc.chunk.js.map": "/rokj-app/static/js/453.54c620fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e27e9b95.css",
+    "static/js/main.af889503.js"
+  ]
+}
