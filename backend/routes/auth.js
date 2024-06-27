@@ -38,11 +38,6 @@ router.post("/fetchUser", [body("name", "Name field can't be Empty").isLength({ 
         return res.status(400).json({ success, errors:[{msg:"Captcha is invalid"}]});
     }
 
-    // if(name.length < 1 || dob.length < 1){
-    //     success = false;
-    //     return res.status(400).json({ success, errors:[{msg:"candidates field can not be empty"}]});
-    // }
-
     try{
         user = await usersInfo.create({
             name: req.body.name,

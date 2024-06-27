@@ -45,11 +45,11 @@ export default function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("http://localhost:8000/api/auth/fetchUser", {
-            method: "POST",
+        const response1 = await fetch("https://wptest.rsksolarenergy.com/wp-json/myplugin/v1/store-data/",{
             headers: {
                 "Content-Type": "application/json"
             },
+            method: "POST",
             body: JSON.stringify({
                 name: name,
                 email: email,
@@ -60,10 +60,11 @@ export default function Form() {
                 ans: ans,
                 candidates: candidates
             })
-        })
-        const data = await response.json();
+        });
+        const data1 = await response1.json();
+        console.log(data1);
 
-        if (data.success) {
+        if (data1.data.success) {
             setAlert({ msg: "Form submitted success", type: "primary" });
             setName("");
             setEmail("");
@@ -74,7 +75,7 @@ export default function Form() {
             setNum2(Math.floor(Math.random() * (9 - 1 + 1)) + 1);
         }
         else {
-            setAlert({ msg: data.errors[0].msg, type: "danger" });
+            setAlert({ msg: data1.message, type: "danger" });
         }
 
         setTimeout(() => {
@@ -92,7 +93,7 @@ export default function Form() {
 
             <Navbar />
 
-            <div className="container" style={{ paddingTop: "100px" }}>
+            <div className="container formClass" style={{ paddingTop: "100px" }}>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         {/* <label htmlFor="exampleInputName1" className="form-label">Name</label> */}
